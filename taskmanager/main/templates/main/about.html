@@ -1,0 +1,39 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+{% block content %}
+<div class="container text-center mt-4 mb-5">
+  <h1 class="my-5">Формы обучения и оплата</h1>
+</div>
+
+<div class="container text-center py-3 mb-5 bg-success text-info"><h2>Индивидуальные уроки, <br>обучение онлайн по ZOOM или Google Meet,<br> групповые занятия онлайн.</h2>
+</div>
+<div class="container mb-4">
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-9">
+            <h2 class="mb-5">Доступны способы оплаты:</h2>
+            <ul class="">
+                <li><h3>Перечисление на расчетный счет</h3></li>
+                <li><h3>Оплата банковской картой через pos-терминал</h3></li>
+                <li><h3>Наличный расчет</h3></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="container mb-4">
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-8 my-5 px-0">
+            <div class="col-1"></div>
+            <img src="static/img/pos_terminal_2.jpg" class="d-block w-100" alt="...">
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
