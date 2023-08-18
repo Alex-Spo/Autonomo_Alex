@@ -5,18 +5,20 @@
 {% endblock %}
 
 {% block content %}
-    <h1 class="mt-4 mb-4">Задайте вопрос (тема, вопрос)</h1>
-    <h3 class="mb-5">Администратор ответит на вопрос, ответ будет размещен на странице "Обсуждение" после Вашего вопроса.</h3>
+    <h2 class="mt-4 mb-4">Задайте вопрос (тема, вопрос)</h2>
+    <h4 class="mb-5">Администратор ответит на вопрос, ответ будет размещен на странице "Обсуждение" после Вашего вопроса.</h4>
   <form method="post">
       {% csrf_token %}
-      <h2 class="mb-4">Тема</h2>
+      <h4 class="mb-4">Тема</h4>
       {{ form.title }}<br class="mb-5"><br class="mb-5">
-      <h2 class="mb-4">Вопрос</h2>
-      {{ form.task }}<br class="mb-5"><br class="mb-5">
+      <h4 class="mb-4">Вопрос</h4>
+      {{ form.task }}<br>
 <!--     <input type="text" placeholder="Input title" class="form-control"><br>-->
 <!--     <textarea type="text" placeholder="Input Task" class="form-control"></textarea><br>-->
       <button type="submit" class="btn btn-success">Отправить</button>
 <!--      <span>{{ error }}</span>-->
 
   </form>
+<br class="mb-5"><br class="mb-5"><br class="mb-5"><br class="mb-5"><br class="mb-5"><br class="mb-5"><br class="mb-5">
+
 {% endblock %}
