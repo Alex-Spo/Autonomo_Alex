@@ -5,15 +5,16 @@
 {% endblock %}
 
 {% block content %}
-    <h2 class="my-4">Задайте вопрос (тема, вопрос)</h2>
+    <h2 class="mt-4">Задайте вопрос (тема, вопрос)</h2>
+    <h6 class="mb-4">Администратор ответит на вопрос, ответ будет размещен на странице "Обсуждение" после Вашего вопроса.</h6>
   <form method="post">
       {% csrf_token %}
       {{ form.title }}<br>
       {{ form.task }}<br>
 <!--     <input type="text" placeholder="Input title" class="form-control"><br>-->
 <!--     <textarea type="text" placeholder="Input Task" class="form-control"></textarea><br>-->
-     <button type="submit" class="btn btn-success">Отправить</button>
-      <span>{{ error }}</span>
+      <button type="submit" class="btn btn-success">Отправить</button>
+<!--      <span>{{ error }}</span>-->
 
   </form>
 {% endblock %}

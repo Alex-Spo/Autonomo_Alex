@@ -7,11 +7,14 @@
 {% block content %}
 
     <h2 class="my-4">Обсуждение</h2>
+    <h6 class="mb-4">Прочитайте часто задаваемые вопросы и ответы. Свои вопросы можно задать на странице "Задать вопрос".</h6>
     {% if tasks %}
         {% for el in tasks %}
             <div class="alert alert-warning mt-2">
-                <h3>{{ el.title }}</h3>
-                <p>{{ el.task }}</p>
+                <h5>{{ el.title }}</h5>
+                {% autoescape off %}
+                <p class="m-0">{{ el.task }}</p>
+                {% endautoescape %}
             </div>
         {% endfor %}
     {% else %}
